@@ -1,92 +1,84 @@
-html {
-  height: 100%;
-  height-margin: 0;
-  height-padding: 0;
-  height-overflow: hidden;
-}
-
-2 {
-  font-size: 40px;
-}
-
-.head_line {
-  text-align: center;
-  color: #ffffcc;
-  font-size: 40px;
-}
-
-.width_1000 {
+body {
   width: 1000px;
 }
 
-.logo {
-  vertical-align: middle;
-  text-align: center;
-  font-size: 30px;
-}
-
-ul {
+.tabs_list {
   list-style: none;
+  padding: 0px;
   margin: 0;
-  height: 450px;
 }
 
-ul.menu {
+.tab {
+  list-style: none;
+  border: 1px solid black;
+  margin-top: -1px;
+  margin-right: -1px;
+  margin-left: -1px;
+  z-index: 100;
   background-color: #CFE2F3;
   font-size: 20px;
-  padding: 0;
+  padding: 12px 10px;
 }
 
-li.menu_item {
-  margin-bottom: -1px;
-  padding: 5px 10px;
-  border: 1px solid #000;
+.tab:hover {
+  background-color: #ecf3fa;
+}
+
+.tab.active {
+  border-right-color: #D9D2E9;
+  background-color: #D9D2E9;
+}
+
+.tab.active:hover {
+  background-color: #edeaf5;
+}
+
+.tabs {
+  width: 28%;
+  float: left;
+  border: 1px solid black;
+  padding: 0px;
+  height: 570px;
   background-color: #CFE2F3;
 }
 
-li.menu_item:hover {
-  background-color: #f8fbfd;
-}
-
-li.menu_item:last-of-type {
-  height: 40%;
-}
-
-li.menu_item.menu_item_active {
-  border-right: none;
+.tab_content {
+  border: 1px solid black;
+  width: 70%;
+  float: left;
+  position: relative;
+  margin-left: -1px;
+  z-index: -5;
+  padding: 10px;
+  height: 570px;
   background-color: #D9D2E9;
 }
 
-.text_block {
+.tab_item {
+  display: none;
+}
+
+.tab_item:first-child {
+  display: block;
+}
+
+.smaller_text_block {
+  font-weight: bolder;
+  font-size: 15px;
   display: inline-block;
-  display-float: left;
-  width: 45%;
-  margin: 5px 10px;
   vertical-align: top;
-  font-weight: bold;
+  margin: 5px;
+  width: 45%;
 }
 
-.menu_right_column {
-  padding-left: 0;
-  background-color: #D9D2E9;
+.smaller_text_block.mid_block {
+  width: 31%;
 }
 
-.mid_line_text_block {
-  width: 30%;
-}
-
-.bot_line_text_block {
+.smaller_text_block.bottom_block {
   width: 60%;
 }
 
-.bot_line_left {
+.smaller_text_block.bottom_block.bottom_block_left {
   width: 30%;
-}
-
-.Bot_line_text {
-  margin-bottom: 20px;
-}
-
-.menu_left_column {
-  padding-right: 0;
 }
